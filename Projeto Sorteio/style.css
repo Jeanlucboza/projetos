@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* ❌ REMOVIDO: display: block; */
+}
+
+body {
+    background: black;
+}
+
+/* ✅ NOVO: Centraliza todo o conteúdo */
+main {
+    display: flex;
+    flex-direction: column;    /* Empilha os elementos verticalmente */
+    align-items: center;       /* Centraliza horizontalmente */
+    padding: 20px;
+}
+
+.logo-sorteio {
+    width: 583px;
+    height: 374px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+/* ✅ NOVO: Container dos inputs lado a lado */
+label {
+    display: flex;              /* Coloca os inputs em linha */
+    justify-content: center;    /* Centraliza os inputs */
+    gap: 20px;                  /* Espaçamento entre eles */
+}
+
+input {
+    width: 342px;
+    height: 74px;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid transparent;
+    border-radius: 14px;
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    margin-top: 50px;
+    width: 342px;
+    height: 72px;
+    border-radius: 10px;
+    border: none;
+    background: #aec346;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #9ab33d;
+}

@@ -83,3 +83,51 @@ div p {
     color: #FDB927;
     margin-top: 5px;
 }
+@media (max-width: 320px) {
+    body {
+        padding: 10px;
+    }
+    
+    main {
+        padding: 20px 15px;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+    
+    input,
+    .btn-calcular {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablets e telas médias (a partir de 768px) */
+@media (min-width: 768px) {
+    .logo {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    
+    main {
+        padding: 40px;
+        gap: 25px;
+    }
+    
+    input {
+        padding: 15px;
+    }
+}
+
+/* Desktop (a partir de 1024px) */
+@media (min-width: 1024px) {
+    main {
+        max-width: 450px;
+    }
+    
+    .btn-calcular:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+    }
+}
